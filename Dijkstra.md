@@ -1,3 +1,4 @@
+[参考灵神写法](https://leetcode.cn/problems/network-delay-time/solutions/2668220/liang-chong-dijkstra-xie-fa-fu-ti-dan-py-ooe8/)
 **Dijkstra**算法适用于求中从单个源节点出发求所有源节点到目标节点的最短距离。节点之间的边既可以是有向边也可以是无向边。（且节点之间的权重是非负数）。
 其核心是维护一个**minDist**数组，数组的下标对应目标节点编号，算法需要时刻维护minDist数组的定义。（循环不变量）。**Dijkstra**算法是一种贪心思想，遍历当前的minDist数组，找到未建立最短路径节点的点s，从中选取路径最小的点。然后利用该点更新**minDist**数组。
 ### 写法1：朴素Dijkstra（适用于稠密图，时间复杂度与节点个数相关）
