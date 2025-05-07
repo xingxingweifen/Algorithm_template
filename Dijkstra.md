@@ -106,6 +106,6 @@ public:
 ```
 **复杂度分析**
 - 时间复杂度：O(mlogm) m为边的个数。
-- 空间复杂度：O(m)。
+- 空间复杂度：O(m)。  
 在堆优化版本中需要判断dis > minDist[to]的原因见下图  
 ![](./pics/dijkstra.jpg)
